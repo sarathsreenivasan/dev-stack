@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CLOTHIQUE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;family=Marcellus&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+<body class="homepage" data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0" style class="body-pos">
+  <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart" aria-modal="true" role="dialog">
+    <div class="offcanvas-header justify-content-center">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Your cart</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Growers cider</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Fresh grapes</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Heinz tomato ketchup</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$20</strong>
+          </li>
+        </ul>
+
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to Checkout</button>
+      </div>
+    </div>
+  </div>
+    <div class="modal fade " id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">  
+      <div class="modal-dialog ">
+        <div class="modal-content">
+
+          <form role="search" method="get" class="form-group" action="">
+            <input type="search" id="search-form" class="form-control border-0 border-bottom" placeholder="Type and press enter" value="" name="s">
+            <button type="submit" class="search-submit border-0 position-absolute bg-white" style="top: 15px;right: 15px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></button>
+          </form>
+
+          <h5 class="list-title text-dark">Browse Categories</h5>
+
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#" title="Jackets" class="text-dark">Jackets</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" title="T-shirts" class="text-dark">T-shirts</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" title="Handbags" class="text-dark">Handbags</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" title="Accessories" class="text-dark">Accessories</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" title="Cosmetics" class="text-dark">Cosmetics</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" title="Dresses" class="text-dark">Dresses</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" title="Jumpsuits" class="text-dark">Jumpsuits</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ 
+    <nav class="navbar navbar-expand-lg bg-light justify-content-center">
+        <div class="container-fluid ">
+            <div class="col-auto"><a href="#" class="navbar-brand ">CLOTHIQUE</a></div>
+            <div class="col-auto">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+                
+                <div class="offcanvas-body">
+                    <div class="offcanvas-header">
+                        <h1>MENU</h1><button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3 ">
+                        <li class="nav-item p-3 px-3">
+                            <a href="#" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item p-3 px-3">
+                            <a href="#" class="nav-link">SHOP</a>
+                        </li>
+                        <li class="nav-item p-3 px-3">
+                            <a href="#" class="nav-link">BLOG</a>
+                        </li>
+                        <li class="nav-item p-3 px-3">
+                            <a href="#" class="nav-link">PAGES</a>
+                        </li>
+                        <li class="nav-item p-3 px-3">
+                            <a href="#" class="nav-link">BLOG</a>
+                        </li>
+                        <li class="nav-item p-3 px-3">
+                            <a href="#" class="nav-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+                <div class="col-3 col-lg-auto">
+                    <ul class="list-unstyled d-flex m-0">
+                        <li class="d-none d-lg-block nav-item">
+                            <a href="index.html" class="mx-3 nav-link">WISHLIST <span class="wishlist-count">(0)</span></a>
+                        </li>
+                        <li class="d-none d-lg-block nav-item">
+                            <a href="index.html" class="mx-3 nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">CART<span class="cart-count">(0)</span></a>
+                        </li>
+                        <li class="d-lg-none nav-item">
+                            <a href="#" class="mx-2 nav-link">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 24 24">
+                                <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="d-lg-none nav-item">
+                            <a href="#search" class="mx-2 nav-link search-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5z"/>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="search-box nav-item">
+                           <a href="#search" class="search-button"  id="search-btn" data-toggle="modal" data-target="#searchModal">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-search" viewBox="0 0 16 24">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                              </svg>
+                            </a>
+                          </li>
+                    </ul>
+                </div>
+        </div>
+       
+    </nav>
+    <section id="billboard" class="bg-light py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 class="section-title text-center mt-4 aos-init aos-animate " data-aos="fade-up" style="font-weight: 500; font-size: 80px;">New Collections</h1>
+          <div class="col-md-6 text-center text-secondary aos-init-aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas ut dolorum consequuntur, adipisci repellat! Eveniet commodi voluptatem voluptate, eum minima, in suscipit explicabo voluptatibus harum, quibusdam ex repellat eaque!</p>
+          </div>
+        </div>
+      </div>
+      <div><button id="buttonr" class="btn btn-light nav-button left" onclick="screenLeft()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+        </svg></button>
+        <button id="buttonl" class="btn btn-light nav-button right" onclick="screenRight()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+        </svg></button>
+      </div>
+      
+          <div class="row flex-nowrap overflow-auto" id="scrollable-row">
+            
+            
+            <div class="col-3 item1">
+              <div class="banner-item">
+                <div class="image-holder py-4">
+                  <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html"  class="text-decoration-none text-dark">Soft leather jackets</a>
+                  </h5>
+                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 item1">
+              <div class="banner-item">
+                <div class="image-holder py-4">
+                  <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html"  class="text-decoration-none text-dark">Soft leather jackets</a>
+                  </h5>
+                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 item1">
+              <div class="banner-item">
+                <div class="image-holder py-4">
+                  <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html"  class="text-decoration-none text-dark">Soft leather jackets</a>
+                  </h5>
+                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 item1">
+              <div class="banner-item">
+                <div class="images/image-holder py-4">
+                  <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html"  class="text-decoration-none text-dark">Soft leather jackets</a>
+                  </h5>
+                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 item1">
+              <div class="banner-item">
+                <div class="image-holder py-4">
+                  <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html"  class="text-decoration-none text-dark">Soft leather jackets</a>
+                  </h5>
+                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 item1">
+              <div class="banner-item">
+                <div class="images/image-holder py-4">
+                  <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html"  class="text-decoration-none text-dark">Soft leather jackets</a>
+                  </h5>
+                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 item1 ">
+              <div class="banner-item">
+                <div class="image-holder py-4">
+                  <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html"  class="text-decoration-none text-dark">Soft leather jackets</a>
+                  </h5>
+                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 item1">
+              <div class="banner-item">
+                <div class="image-holder py-4">
+                  <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html"  class="text-decoration-none text-dark">Soft leather jackets</a>
+                  </h5>
+                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <div class="py-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="gray" class="bi bi-calendar" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+              </svg>
+              <h4 class="element-title my-3">BOOK AN APPOINMENT</h4>
+              <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="py-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="gray" class="bi bi-handbag" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
+              </svg>
+              <h4 class="element-title my-3">PICK UP IN STORE</h4>
+              <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="py-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="gray" class="bi bi-gift" viewBox="0 0 16 16">
+                <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z"/>
+              </svg>
+              <h4 class="element-title my-3">SPECIAL PACKAGING</h4>
+              <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="py-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="gray" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+              </svg>
+              <h4 class="element-title my-3">FREE GLOBAL RETURNS</h4>
+              <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="image-holder">
+            <a href="index.html">
+              <img src="images/cat-item1.jpg" class="img-fluid product-image">
+            </a>
+          </div>
+          <div class="catagory-content">
+            <div class="product-button">
+              <a href="index.html" class="btn btn-common text-uppercase">shop for men</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image-holder">
+            <a href="index.html">
+              <img src="images/cat-item2.jpg" class="img-fluid product-image">
+            </a>
+          </div>
+          <div class="catagory-content">
+            <div class="product-button">
+              <a href="index.html" class="btn btn-common text-uppercase">shop for women</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image-holder">
+            <a href="index.html">
+              <img src="images/cat-item3.jpg" class="img-fluid product-image">
+            </a>
+          </div>
+          <div class="catagory-content">
+            <div class="product-button">
+              <a href="index.html" class="btn btn-common text-uppercase">shop for accesories</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="mt-5 mb-3 justify-content-between allign-item-center d-flex flex-wrap">
+        <h4>NEW ARRIVALS</h4>
+        <a href="index.html" class="btn-link">view all products</a>
+      </div>
+      <section id="billboard" class="bg-light py-5">
+        <div><button id="buttonr" class="btn btn-light nav-button left" onclick="screenLeft()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg></button>
+          <button id="buttonl" class="btn btn-light nav-button right" onclick="screenRight()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg></button>
+        </div>
+        
+            <div class="row flex-nowrap overflow-auto" id="scrollable-row">
+              <div class="col-3 item">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 item">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 item">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 item">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 item">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 item">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 item">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 item">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+    </div>   
+    <section class="collection bg-light possition-relative py-5">
+      <div class="container">
+        <div class="row">
+          <div class="collection-item d-flex flex-wrap my-5">
+            <div class="col-md-6 column-container">
+              <div class="image-holder">
+                <img src="images/single-image-2.jpg" alt="">
+              </div>
+            </div>
+            <div class="column-container col-md-6 bg-white">
+              <div class="collection-content p-5 m-0 m-md-5">
+                <h3 class="element-title text-uppercase">Classic winter collection</h3>
+                <p>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla a. Ac sed eu
+                  fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit libero. Ultricies quam
+                  nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in. Pulvinar commodo mollis
+                  diam sed facilisis at cursus imperdiet cursus ac faucibus sit faucibus sit libero.</p>
+                <a href="#" class="btn btn-dark text-uppercase mt-3">Shop Collection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <div class="container">
+      <div class="mt-5 mb-3 justify-content-between allign-item-center d-flex flex-wrap">
+        <h4>BEST SELLINGS</h4>
+        <a href="index.html" class="btn-link">view all products</a>
+      </div>
+      <section id="billboard" class="bg-light py-5">
+        <div><button id="buttonr" class="btn btn-light nav-button left" onclick="screenLeft()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg></button>
+          <button id="buttonl" class="btn btn-light nav-button right" onclick="screenRight()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg></button>
+        </div>
+        
+            <div class="row flex-nowrap overflow-auto" id="scrollable-row">
+              <div class="col-6">
+                <div class="banner-item">
+                  <div class="image-holder py-4 relative">
+                    <a href="index.html">
+                      <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                    </a>
+                    <a href="index.html" class="btn-wishlist btn-icon absolute">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                        <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                      <a href="index.html" class="btn-wishlist btn-icon absolute">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                          <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 ">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                      <a href="index.html" class="btn-wishlist btn-icon absolute">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                          <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                      <a href="index.html" class="btn-wishlist btn-icon absolute">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                          <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 ">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                      <a href="index.html" class="btn-wishlist btn-icon absolute">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                          <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                      <a href="index.html" class="btn-wishlist btn-icon absolute">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                          <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                      <a href="index.html" class="btn-wishlist btn-icon absolute">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                          <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                      <a href="index.html" class="btn-wishlist btn-icon absolute">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                          <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="banner-item">
+                  <div class="image-holder py-4">
+                    <img src="images/banner-image-6.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      baggy shirt
+                    </h5>
+                    <p>buy now</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">$95.99</a>
+                      <a href="index.html" class="btn-wishlist btn-icon absolute">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                          <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+    </div> 
+    <div class="mt-5 text-center">
+      <h3 class="text-uppercase">we love your good reviews</h3>
+    </div> 
+    <div class="tab-content">
+      <div id="home" class="container tab-pane active text-center"><br>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+      </div>
+      <div id="menu1" class="container tab-pane fade text-center"><br>
+        
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="menu2" class="container tab-pane fade text-center"><br>
+        
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      </div>
+    </div>
+    <ul class="nav nav-tabs justify-content-center" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-circle-fill" viewBox="0 0 16 16" class="point">
+            <circle cx="8" cy="8" r="8"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-circle-fill" viewBox="0 0 16 16" class="point">
+            <circle cx="8" cy="8" r="8"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-circle-fill" viewBox="0 0 16 16" class="point">
+            <circle cx="8" cy="8" r="8"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  <section class="blog py-5">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between allign-item-center mt-5 mb-3">
+        <h4 class="text-uppercase">reed blog posts</h4>
+        <a href="index.html" class="btn-link">view all</a>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a href="index.html">
+                <img src="images/post-image2.jpg" alt="image" class="post-grid-image img-fluid">
+              </a>
+            </div>
+            <div class="post-content d-flex flex-wrap gap-2 my-3">
+              <div class="post-meta text-uppercase fs-6 text-secondary">
+                <span class="post-catagory">fashion</span>
+                <span class="meta-day">jul 11 , 2024</span>
+              </div>
+              <h5 class="post-title text-uppercase">
+                <a href="index.html"  class="text-decoration-none text-dark">how to look outstanding in pastel</a>
+              </h5>
+              <p>Dignissim lacus,turpis ut suspendisse vel tellus.Turpis purus,gravida orci,fringilla...</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a href="index.html">
+                <img src="images/post-image2.jpg" alt="image" class="post-grid-image img-fluid">
+              </a>
+            </div>
+            <div class="post-content d-flex flex-wrap gap-2 my-3">
+              <div class="post-meta text-uppercase fs-6 text-secondary">
+                <span class="post-catagory">fashion</span>
+                <span class="meta-day">jul 11 , 2024</span>
+              </div>
+              <h5 class="post-title text-uppercase">
+                <a href="index.html"  class="text-decoration-none text-dark">how to look outstanding in pastel</a>
+              </h5>
+              <p>Dignissim lacus,turpis ut suspendisse vel tellus.Turpis purus,gravida orci,fringilla...</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a href="index.html">
+                <img src="images/post-image2.jpg" alt="image" class="post-grid-image img-fluid">
+              </a>
+            </div>
+            <div class="post-content d-flex flex-wrap gap-2 my-3">
+              <div class="post-meta text-uppercase fs-6 text-secondary">
+                <span class="post-catagory">fashion</span>
+                <span class="meta-day">jul 11 , 2024</span>
+              </div>
+              <h5 class="post-title  text-uppercase">
+                <a href="index.html " class="text-decoration-none text-dark">how to look outstanding in pastel</a>
+              </h5>
+              <p>Dignissim lacus,turpis ut suspendisse vel tellus.Turpis purus,gravida orci,fringilla...</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="logo-bar py-5 my-5">
+    <div class="container">
+      <div class="row">
+        <div class="logo-content d-flex flex-wrap justify-content-between">
+          <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="newsletter bg-light" style="background: url(pattern-bg.png) no-repeat;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 py-5 my-5">
+          <div class="subscribe-header text-center">
+            <h3 class="section-title text-uppercase">sign up for newsletter</h3>
+          </div>
+          <form id="form" class="d-flex flex-wrap gap-2">
+            <input type="text" name="email" placeholder="Your email address" class="form-control form-control-lg">
+            <button class="btn btn-dark btn-lg text-uppercase w-100">sign up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="instagram ">
+    
+    <div class="row g-0">
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/_clothiqque_/" target="_blank">
+            <img src="images/insta-item1.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/_clothiqque_/" target="_blank">
+            <img src="images/insta-item1.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/_clothiqque_/" target="_blank">
+            <img src="images/insta-item1.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/_clothiqque_/" target="_blank">
+            <img src="images/insta-item1.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/_clothiqque_/" target="_blank">
+            <img src="images/insta-item1.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/_clothiqque_/" target="_blank">
+            <img src="images/insta-item1.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+  
+    </div>
+    <div class="d-flex justify-content-center w-100  bottom-0 z-1">
+      <a href="https://www.instagram.com/_clothiqque_/" class="btn btn-dark px-5">Follow us on instagram</a>
+    </div>
+  </section>
+  <footer id="footer " class="mt-5">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between py-5">
+        <div class="col-md-3 col-sm-6 ">
+          <div class="footer-menu footer-menu-001">
+            <div class="footer-intro mb-4">
+              <a href="index.html" class="text-decoration-none"><h2 style="color: black;">CLOTHIQUE</h2></a>
+            </div>
+            <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus
+              vitae, ultrices nunc. Sit ac sit suscipit hendrerit.
+            </p>
+            <div class="social-links">
+              <ul class="list-unstyled d-flex flex-wrap gap-3">
+                <li >
+                  <a href="#" class="text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                      <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 ">
+          <div class="footer-menu footer-menu-002">
+            <h5 class="widget-title text-uppercase mb-4">quick links</h5>
+            <ul class="menu-list list-unstyled text-uppercase  border-animation-left fs-6">
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">home</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">about</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">services</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">single item</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 "> 
+          <div class="footer-menu footer-menu-003">
+            <h5 class="widget-title text-uppercase mb-4">help & info</h5>
+            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">track your order</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">returns</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">exchanges</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">shipping</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">delivery</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">contact us</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">find us easy</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor text-secondary text-decoration-none">faq</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 ">
+          <div class="footer-menu footer-menu-004 border-animation-left">
+            <h5 class="widget-title text-uppercase mb-4">help & info</h5>
+            <p>Do you have any questions or suggestions? 
+              <a href="mailto:clothique2024@gmail.com" class="item-anchor text-decoration-none text-dark">mail me</a>
+            </p>
+            <p>Do you need support? Give us a call. 
+              <a href="tel:+919400115029" class="item-anchor text-decoration-none text-dark">call me</a>
+            </p>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class="border-top py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex flex-wrap">
+            <div class="shipping">
+              <span>we ship with</span>
+              <img src="images/arct-icon.png" alt="icon">
+              <img src="images/dhl-logo.png" alt="icon">
+            </div>
+            <div class="payment-option">
+              <span > payment option</span>
+              <img src="images/visa-card.png" alt="card">
+              <img src="images/paypal-card.png" alt="card">
+              <img src="images/master-card.png" alt="card">
+            </div>
+          </div>
+          <div class="col-md-6 text-end">
+            <p>© Copyright 2022 Kaira. All rights reserved. Design by <a href="https://templatesjungle.com" target="_blank">TemplatesJungle</a> Distribution By <a href="https://themewagon.com" target="blank">ThemeWagon</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+    function screenLeft() { 
+      const row = document.getElementById('scrollable-row'); 
+      row.scrollLeft -= 500;
+      } 
+      function screenRight() { 
+        const row = document.getElementById('scrollable-row'); 
+        row.scrollLeft += 500; 
+        }
+    
+    
+    </script>
+<style>
+  .tab-pane p{
+    font-size: x-large;
+  }
+  .point:hover{
+    .point svg{
+      color: black;
+    }
+  }
+  p{
+    color: gray;
+  }
+  #buttonr{
+    float: left;
+  }
+  #buttonl{
+    float: right;
+  }
+  .image-holder img{
+    display: block;
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+  .image-holder {
+    display: inline-block;
+    border: 5px solid #fdfcfc;
+    overflow: hidden;
+    transition: transform 0.5s ease, border 0.5s ease;
+  }
+  .image-holder:hover img{
+    transform: scale(1.2);
+  }
+  
+  .image-holder:hover{
+    transform: scale(0.9);
+    border: 2px solid #fcfafa;
+  }
+ @media only screen and (max-width:750px){
+    .item1{
+      width: 100%;
+    } 
+  }
+  @media only screen and (min-width:750px){
+    .item1{
+      width: 30%;
+    } 
+  }
+  .outer{
+    position: relative; 
+    display: inline-block;
+  }
+  .outer img{
+    display: block;
+  }
+  .inner{
+    position: absolute;  
+    padding: 10px; 
+    border-radius: 8px;
+  }
+  .relative{
+    position: relative;
+  }
+  .absolute{
+    z-index: -1;
+    position: absolute;
+    background-color: #fcfafa00;
+    top: 8%;
+    right: 5%;
+    
+  }
+  .relative:hover{
+    .absolute{
+      z-index: 1;
+    }
+  }
+  .body-pos{
+    position: relative;
+  }
+ .modal-dialog{
+  min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+ .video .video-content{
+  position: relative;
+ }
+  
+.video-player{
+  
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.video-player svg{
+  color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    vertical-align: middle;
+}
+#c-btn #prev #next{
+  color: rgba(0, 0, 0, 0.301);
+}
+.carousel-item p{
+  font-size:x-large;
+  left: 100px;
+}
+.con{
+  padding: 50px;
+}
+.item2{
+  width: 100%;
+}
+/* .carousel-item{
+  padding-top: 5%;
+  padding-left: 5%;
+} */
+body{
+  font-family: "marcellus",roboto,sans-serif;
+}
+.z-1{
+  z-index: 1 !important;
+}
+</style>
+
+</html>
+
