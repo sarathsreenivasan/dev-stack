@@ -1,0 +1,146 @@
+.main{
+	float: left;
+	align-items: center;
+	justify-content: center;
+	width: 350px;
+	height: 400px;
+	background-color: rgb(251 221 185);
+	
+	
+}
+body{ 
+	background: url(wp10054836.webp);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  
+
+
+}
+img{
+ width: 300px;  
+	
+}
+.z-1{
+	float: left;
+	background-color: white;
+	justify-content: center;
+	display: flex;
+	height: 400px;
+	width: 300px;
+	border: 2px solid rgb(251 221 185);
+	
+}
+.main h1{
+	text-transform: uppercase;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #fff;
+	text-shadow: 1px 1px 9px  #d95e35;
+	text-align: center;
+}
+.login input{
+	width: 340px;
+	height: 30px;
+	border-radius: 50px;
+	margin: 20px 0;
+	border: none;
+	outline: none;
+	background: transparent;
+	border: 2px solid gray;
+	border-radius: 40px;
+	text-align: center;
+
+}
+.main form{
+	width: 100%;
+}
+.remember{
+	width: 325px;
+	justify-content: space-between;
+	margin: -15px 0 15px;
+	padding-left: 5px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: small;
+}
+.remember a{
+	float: right;
+	text-decoration: none;
+	color: rgb(86, 80, 80);
+}   
+.remember a:hover{
+	color: white;
+}
+.remember label{
+	color: rgb(86, 80, 80);
+}
+.submit{
+	margin-top: 30px;
+	margin-left: 100px;   
+}
+button{
+	width: 150px;
+	height: 40px;
+	border: none;
+	border-radius: 40px;
+	background-color: #f99371;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #a32900;
+	text-transform: uppercase;
+	box-shadow:0 5px #a32900;
+
+}
+button:hover{
+	background-color: #fcb69f;
+	
+}
+button:active{
+	transform: translateY(4px);
+	box-shadow:0 1px #a32900;
+}
+@media screen and(max-width:600px){
+	body{
+		
+		width: 100%;
+		flex: 100%;
+		
+	}
+}
+@media screen and(max-width:600px){
+	.z-1{
+	   
+		width: 600px;
+		flex: 100%;
+		
+		
+	   
+	}
+}
+@media screen and(max-width:600px){
+   .main{
+		
+		width: 100%;
+		flex: 100%;
+		
+   }
+
+}
+@media screen and(max-width:600px){
+	.group{
+		 
+		 width: 100%;
+		 
+		 
+	}
+	
+ }
+ @media screen and(max-width:600px){
+	img{
+		 
+		 width: 600px;
+		 
+		 
+		 
+	}
+	
+ }
