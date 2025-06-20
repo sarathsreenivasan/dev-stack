@@ -1,0 +1,70 @@
+.form{
+    margin: 100px auto;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    padding: 50px;
+    
+
+}
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+Stack{
+    width: 100%;
+}
+.button-div{
+    padding-left: 40%;
+}
+.login-body{
+    width: 700px;
+    background-color: aliceblue;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+   
+}
+.login-body username{
+    border-radius: 10px;
+}
+.MuiFormLabel-root {
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+  
+  .MuiFormControl-root {
+    margin-top: 8px;
+  }
+  .login-input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  .btn-link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 10px;
+  }
+.imageheight {
+  width: 100%;
+  height: 400px; /* You can adjust this height */
+ 
+  border-radius: 10px; /* Optional for rounded corners */
+}
+.Login-body{
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10%;
+
+}
